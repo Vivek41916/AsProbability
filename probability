@@ -1,0 +1,10 @@
+from itertools import *
+n=int(input())
+l=list(map(str,input().split()))[:n]
+k=int(input())
+l1=(list(combinations(l,k)))
+c=0
+for i in l1:
+    if( 'a' in i):
+        c+=1
+print(c/len(l1))
